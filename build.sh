@@ -8,6 +8,8 @@ git submodule update
 
 # local.conf won't exist until this step on first execution
 source poky/oe-init-build-env
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
 
 CONFLINE="MACHINE = \"qemuarm64\""
 
