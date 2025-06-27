@@ -1,7 +1,8 @@
 #!/bin/sh
 
-case $1
+case $1 in
 	start)
+		cp /lib/modules/`uname -r`/extra/scull.ko /
 		start-stop-daemon -S -n scullinit -a /bin/scull_load
 		;;
 	stop)
